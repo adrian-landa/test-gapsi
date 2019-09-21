@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorWhite"
+        app:cardCornerRadius="@dimen/radius_short"
+        android:layout_margin="@dimen/dimen_short"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideV50"
+                android:layout_width="@dimen/dimen_xxxshort"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgProductThumbnail"
+                android:layout_margin="@dimen/dimen_medium"
+                android:layout_width="@dimen/dimen_adjustable"
+                android:layout_height="@dimen/height_thumbnail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/guideV50"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:id="@+id/tvProductName"
+                style="@style/Subtitle"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/guideV50"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvProductPrice"
+                tools:text="Titulo"/>
+        <TextView
+                android:id="@+id/tvProductPrice"
+                style="@style/Body1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/guideV50"
+                app:layout_constraintTop_toBottomOf="@id/tvProductName"
+                app:layout_constraintBottom_toTopOf="@+id/tvProductUbication"
+                tools:text="Price: $10.00 MXN"
+        />
+        <TextView
+                android:id="@+id/tvProductUbication"
+                style="@style/Body1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/guideV50"
+                app:layout_constraintTop_toBottomOf="@id/tvProductPrice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Available: Superama"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
