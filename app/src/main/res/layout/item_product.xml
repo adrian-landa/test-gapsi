@@ -17,11 +17,12 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5"/>
-        <androidx.appcompat.widget.AppCompatImageView
+        <ImageView
                 android:id="@+id/imgProductThumbnail"
                 android:layout_margin="@dimen/dimen_medium"
                 android:layout_width="@dimen/dimen_adjustable"
                 android:layout_height="@dimen/height_thumbnail"
+                android:scaleType="fitXY"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/guideV50"
                 app:layout_constraintTop_toTopOf="parent"
@@ -29,6 +30,8 @@
         <TextView
                 android:id="@+id/tvProductName"
                 style="@style/Subtitle"
+                android:layout_width="@dimen/dimen_adjustable"
+                android:textAlignment="center"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="@id/guideV50"
                 app:layout_constraintTop_toTopOf="parent"
@@ -45,7 +48,9 @@
         />
         <TextView
                 android:id="@+id/tvProductUbication"
-                style="@style/Body1"
+                style="@style/Body2"
+                android:maxLines="3"
+                android:layout_width="@dimen/dimen_adjustable"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="@id/guideV50"
                 app:layout_constraintTop_toBottomOf="@id/tvProductPrice"

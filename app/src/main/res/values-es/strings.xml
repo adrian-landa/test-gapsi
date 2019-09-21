@@ -1,8 +1,11 @@
 <resources>
 
     <string name="label_title_home">Inicio</string>
-    <string name="label_empty_market">No Disponible</string>
+    <string name="label_title_history">Historial</string>
+    <string name="template_currency">Precio $%1$s MXN</string>
+    <string name="label_empty_market">Only Online</string>
     <string name="label_empty_products">No hay Productos que Mostrar</string>
     <string name="label_menu_search">Buscar</string>
+    <string name="hint_name">Nombre</string>
 
 </resources>

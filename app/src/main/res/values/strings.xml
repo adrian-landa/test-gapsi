@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">Product Searcher</string>
     <string name="label_title_home">Home</string>
-    <string name="template_currency" translatable="false">$%1$s MXN</string>
-    <string name="label_empty_market">No Available</string>
+    <string name="label_title_history">History</string>
+    <string name="template_currency">Price $%1$s MXN</string>
+    <string name="label_empty_market">Only Online</string>
     <string name="label_empty_products">No Products to Show</string>
     <string name="label_menu_search">Search</string>
+    <string name="hint_name">Name</string>
 </resources>
